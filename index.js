@@ -17,3 +17,9 @@ const shape = Bodies.rectangle(200, 200, 50, 50, {
     isStatic: true
 }); 
 World.add(world, shape);
+
+//Walls
+const walls = [
+    Bodies.rectangle(400, 0, 800, 40, {isStatic:true}), 
+];
+World.add(world, walls);
