@@ -1,5 +1,6 @@
 const {Engine, Render, Runner, World, Bodies} = Matter; 
 
+const cells= 3;
 const width = 600; 
 const height = 600; 
 
@@ -46,3 +47,4 @@ const horizontals = Array(2)
 .fill(null)
 .map(() => Array(3));
 
+console.log(horizontals); 
