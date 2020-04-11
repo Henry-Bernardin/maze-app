@@ -31,9 +31,3 @@ const walls = [
     Bodies.rectangle(800, 300, 40, 600, {isStatic:true}), 
 ];
 World.add(world, walls);
-
-// Random Shapes
-for (let i = 0; i < 20; i++ ){
-    World.add(world,
-         Bodies.rectangle(Math.random() * width, Math.random() * height, 50, 50));
-}
