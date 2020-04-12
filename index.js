@@ -47,3 +47,4 @@ const horizontals = Array(cells - 1)
 .fill(null)
 .map(() => Array(cells));
 
+const startRow = Math.floor(Math.random() * cells); 
