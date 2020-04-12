@@ -48,3 +48,4 @@ const horizontals = Array(cells - 1)
 .map(() => Array(cells));
 
 const startRow = Math.floor(Math.random() * cells); 
+const startColumn - Math.floor(Math.random() * cells); 
