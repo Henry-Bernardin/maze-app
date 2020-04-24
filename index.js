@@ -84,6 +84,7 @@ const stepThroughCell = (row, column) => {
     // For each neighbor...
     for (let neighbor of neighbors){
         const [nextRow, nextColumn, direction] = neighbor;
+        
     //See if that neighbor is out of bounds
     if (nextRow < 0 || nextRow >= cells || nextColumn < 0 || nextColumn >= cells){
         continue; //This will skip over and look for the next neighbor pair
