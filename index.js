@@ -83,7 +83,11 @@ const stepThroughCell = (row, column) => {
         console.log(neighbors);
     // For each neighbor...
         for (let neighbor of neighbors){
+            
     //See if that neighbor is out of bounds
+    if (nextRow < 0 || nextRow >= cells || nextColumn < 0 || nextColumn >= cells){
+        continue; //This will skip over and look for the next neighbor pair
+    }
 
     // If we have visited that neighbor continue to next neighbor
 
