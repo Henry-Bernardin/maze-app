@@ -109,5 +109,5 @@ const stepThroughCell = (row, column) => {
     //Visit that next cell
 }; 
 
-stepThroughCell(1, 1); 
+stepThroughCell(startRow, startColumn); 
 
