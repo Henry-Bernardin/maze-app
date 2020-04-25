@@ -110,4 +110,4 @@ const stepThroughCell = (row, column) => {
 }; 
 
 stepThroughCell(1, 1); 
-console.log(grid);
+
