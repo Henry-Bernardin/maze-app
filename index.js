@@ -121,6 +121,15 @@ horizontals.forEach(row => {
             return;
         }
 
-        const wall = Bodies.rectangle();
+        const wall = Bodies.rectangle(
+            columnIndex * unitLength + unitLength / 2, 
+            rowIndex * unitLength + unitLength, 
+            unitLength, 
+            10,
+            {
+                isStatic: true
+            }
+        );
+        World.add(world, wall);
     });
 });
