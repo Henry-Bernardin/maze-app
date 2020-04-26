@@ -72,6 +72,7 @@ const stepThroughCell = (row, column) => {
         if (grid[row][column]){
             return;
         }
+        
     // Mark this cell as being visited 
         grid[row][column]= true; 
     // Assemble randomly-ordered list of neighbors
