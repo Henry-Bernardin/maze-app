@@ -72,7 +72,7 @@ const stepThroughCell = (row, column) => {
         if (grid[row][column]){
             return;
         }
-        
+
     // Mark this cell as being visited 
         grid[row][column]= true; 
     // Assemble randomly-ordered list of neighbors
@@ -132,5 +132,23 @@ horizontals.forEach(row => {
             }
         );
         World.add(world, wall);
+    });
+});
+
+verticals.forEach((row, rowIndex) => {
+  row.forEach((open, columnIndex) => {
+        if (open){
+            return;
+        }
+        const wall = Bodies.rectangle(
+            columnIndex * unitLength + unitLength,
+            rowIndex * unitLength + unitLength / 2, 
+            10, 
+            unitLength, 
+            {
+                isStatic:true
+            }
+        );
+        World.add(world, wall)
     });
 });
