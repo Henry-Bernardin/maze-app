@@ -165,3 +165,11 @@ const goal = Bodies.rectangle(
     }
 );
 World.add(world, goal); 
+
+// Ball
+const ball = Bodies.circle(
+    unitLength / 2,
+    unitLength / 2, 
+    unitLength / 2 
+);
+World.add(world, ball); 
