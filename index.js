@@ -1,4 +1,4 @@
-const {Engine, Render, Runner, World, Bodies} = Matter; 
+const {Engine, Render, Runner, World, Bodies, Body} = Matter; 
 
 const cells= 15;
 const width = 600; 
