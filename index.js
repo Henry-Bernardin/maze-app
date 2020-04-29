@@ -174,19 +174,21 @@ const ball = Bodies.circle(
 );
 World.add(world, ball); 
 
+
 document.addEventListener('keydown', event => {
+    // W
 if (event.keyCode === 87){
     console.log('move ball up');
 }
-
+    // D
 if (event.keyCode === 68){
     console.log('move ball right');
 }
-
+    // S
 if (event.keyCode === 83){
     console.log('move ball down');
 }
-
+    // A
 if (event.keyCode === 65){
     console.log('move ball left');
 }
