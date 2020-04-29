@@ -176,21 +176,24 @@ World.add(world, ball);
 
 
 document.addEventListener('keydown', event => {
-    // W
+    const {x,y} = ball.velocity; 
+    console.log(x, y);
+
+    // W - Move ball up
 if (event.keyCode === 87){
-    console.log('move ball up');
+
 }
-    // D
+    // D - Move ball right
 if (event.keyCode === 68){
-    console.log('move ball right');
+    
 }
-    // S
+    // S - Move ball down
 if (event.keyCode === 83){
-    console.log('move ball down');
+    
 }
-    // A
+    // A - Move ball left
 if (event.keyCode === 65){
-    console.log('move ball left');
+    
 }
 
 }); 
