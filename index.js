@@ -135,7 +135,7 @@ horizontals.forEach((row, rowIndex) => {
     });
 });
 
-/*
+
 verticals.forEach((row, rowIndex) => {
   row.forEach((open, columnIndex) => {
         if (open){
@@ -152,4 +152,4 @@ verticals.forEach((row, rowIndex) => {
         );
         World.add(world, wall)
     });
-});  */
+});  
