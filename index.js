@@ -193,7 +193,7 @@ if (event.keyCode === 83){
 }
     // A - Move ball left
 if (event.keyCode === 65){
-    
+    Body.setVelocity(ball, {x: x -5, y}); 
 }
 
 }); 
