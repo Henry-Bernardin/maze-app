@@ -62,7 +62,7 @@ const verticals = Array(cells)
 
 const horizontals = Array(cells - 1)
 .fill(null)
-.map(() => Array(cells));
+.map(() => Array(cells).fill(false));
 
 const startRow = Math.floor(Math.random() * cells); 
 const startColumn = Math.floor(Math.random() * cells); 
@@ -116,9 +116,9 @@ const stepThroughCell = (row, column) => {
     
 stepThroughCell(startRow, startColumn); 
 
-horizontals.forEach(row => {
-    row.forEach((open) => {
-        if (open){
+horizontals.forEach((row, rowIndex) => {
+    row.forEach((open, columnIndex) => {
+        if (open) {
             return;
         }
 
@@ -135,6 +135,7 @@ horizontals.forEach(row => {
     });
 });
 
+/*
 verticals.forEach((row, rowIndex) => {
   row.forEach((open, columnIndex) => {
         if (open){
@@ -151,4 +152,4 @@ verticals.forEach((row, rowIndex) => {
         );
         World.add(world, wall)
     });
-});
+});  */
