@@ -21,8 +21,6 @@ const render = Render.create({
 Render.run(render);
 Runner.run(Runner.create(), engine);
 
-
-
 //Walls
 const walls = [
     Bodies.rectangle(width / 2, 0, width, 2, {isStatic:true}), 
@@ -80,7 +78,6 @@ const stepThroughCell = (row, column) => {
             [row, column - 1, 'left'] 
         ]); 
 
-        console.log(neighbors);
     // For each neighbor...
     for (let neighbor of neighbors){
         const [nextRow, nextColumn, direction] = neighbor;
