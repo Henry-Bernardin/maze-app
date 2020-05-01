@@ -204,7 +204,7 @@ Events.on(engine, 'collisionStart', event => {
             labels.includes(collision.bodyA.label) &&
             labels.includes(collision.bodyB.label) 
         ){
-            console.log('User Won!');
+            world.gravity.y = 1; // Turns gravity back on 
         }
     });
 }); 
