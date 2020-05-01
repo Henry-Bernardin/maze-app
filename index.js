@@ -1,6 +1,6 @@
 const {Engine, Render, Runner, World, Bodies, Body, Events} = Matter; 
 
-const cells= 15;
+const cells= 3;
 const width = 600; 
 const height = 600; 
 
@@ -196,7 +196,7 @@ if (event.keyCode === 65){
 // Win Condition 
 
 Events.on(engine, 'collisionStart', event => {
-    event.pairs.forEach(() => {
-
+    event.pairs.forEach((collision) => {
+        console.log(collision);
     });
 }); 
