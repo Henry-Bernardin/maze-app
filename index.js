@@ -122,7 +122,8 @@ horizontals.forEach((row, rowIndex) => {
             rowIndex * unitLength + unitLength, 
             unitLength, 
             5,
-            {
+            {   
+                label:'wall',
                 isStatic: true
             }
         );
@@ -141,7 +142,7 @@ verticals.forEach((row, rowIndex) => {
             rowIndex * unitLength + unitLength / 2, 
             5, 
             unitLength, 
-            {
+            {   label: 'wall', 
                 isStatic:true
             }
         );
