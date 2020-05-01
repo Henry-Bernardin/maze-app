@@ -174,7 +174,6 @@ World.add(world, ball);
 
 document.addEventListener('keydown', event => {
     const {x,y} = ball.velocity; 
-    console.log(x, y);
 
     // W - Move ball up
 if (event.keyCode === 87){
@@ -199,6 +198,13 @@ if (event.keyCode === 65){
 
 Events.on(engine, 'collisionStart', event => {
     event.pairs.forEach((collision) => {
-        console.log(collision);
+        const labels = ['ball', 'goal']; 
+
+        if (
+            labels.includes(collision.bodyA.label) &&
+            labels.includes(collision.bodyB.label) 
+        ){
+            console.log('User Won!');
+        }
     });
 }); 
