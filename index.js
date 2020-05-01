@@ -206,6 +206,11 @@ Events.on(engine, 'collisionStart', event => {
             labels.includes(collision.bodyB.label) 
         ){
             world.gravity.y = 1; // Turns gravity back on 
+            world.bodies.forEach(body => {
+                if (body.label === 'wall'){
+                    Body.setStatic(body, false);
+                }
+            });
         }
     });
 }); 
