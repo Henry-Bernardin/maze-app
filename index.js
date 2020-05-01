@@ -165,7 +165,8 @@ World.add(world, goal);
 const ball = Bodies.circle(
     unitLength / 2,
     unitLength / 2, 
-    unitLength / 4 
+    unitLength / 4, 
+    {label: 'ball'} 
 );
 World.add(world, ball); 
 
