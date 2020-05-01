@@ -156,6 +156,7 @@ const goal = Bodies.rectangle(
     unitLength * 0.7, 
     unitLength * 0.7, 
     {
+        label: 'goal',
         isStatic:true
     }
 );
