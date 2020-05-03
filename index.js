@@ -63,7 +63,7 @@ const horizontals = Array(cellsVertical - 1)
 .map(() => Array(cellsHorizontal).fill(false));
 
 const startRow = Math.floor(Math.random() * cellsVertical); 
-const startColumn = Math.floor(Math.random() * cells); 
+const startColumn = Math.floor(Math.random() * cellsHorizontal); 
 
 const stepThroughCell = (row, column) => {
     // If I have visited the cell at [row, column], then return 
