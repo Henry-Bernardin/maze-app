@@ -180,7 +180,12 @@ const ball = Bodies.circle(
     unitLengthX / 2,
     unitLengthY / 2, 
     ballRadius, 
-    {label: 'ball'} 
+    {
+        label: 'ball',
+        render:{
+            fillStyle:'blue'
+        }
+} 
 );
 World.add(world, ball); 
 
