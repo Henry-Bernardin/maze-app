@@ -148,7 +148,10 @@ verticals.forEach((row, rowIndex) => {
             5, 
             unitLengthY, 
             {   label: 'wall', 
-                isStatic:true
+                isStatic:true,
+                render:{
+                    fillStyle:'red'
+                }
             }
         );
         World.add(world, wall)
