@@ -166,10 +166,11 @@ const goal = Bodies.rectangle(
 World.add(world, goal); 
 
 // Ball
+const ballRadius = Math.min (unitLengthX, unitLengthY) / 4;
 const ball = Bodies.circle(
-    unitLength / 2,
-    unitLength / 2, 
-    unitLength / 4, 
+    unitLengthX / 2,
+    unitLengthY / 2, 
+    ballRadius, 
     {label: 'ball'} 
 );
 World.add(world, ball); 
