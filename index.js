@@ -154,10 +154,10 @@ verticals.forEach((row, rowIndex) => {
 
 // Goal
 const goal = Bodies.rectangle(
-    width - unitLength / 2,
-    height - unitLength / 2, 
-    unitLength * 0.7, 
-    unitLength * 0.7, 
+    width - unitLengthX / 2,
+    height - unitLengthY / 2, 
+    unitLengthX * 0.7, 
+    unitLengthY * 0.7, 
     {
         label: 'goal',
         isStatic:true
