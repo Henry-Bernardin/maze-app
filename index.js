@@ -58,9 +58,9 @@ const verticals = Array(cellsVertical)
 .fill(null)
 .map(() => Array(cellsHorizontal - 1).fill(false));
 
-const horizontals = Array(cells - 1)
+const horizontals = Array(cellsVertical - 1)
 .fill(null)
-.map(() => Array(cells).fill(false));
+.map(() => Array(cellsHorizontal).fill(false));
 
 const startRow = Math.floor(Math.random() * cells); 
 const startColumn = Math.floor(Math.random() * cells); 
