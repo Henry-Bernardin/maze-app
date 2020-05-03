@@ -50,9 +50,9 @@ const shuffle = (arr) => {
     return arr; 
 }; 
 
-const grid = Array(cells)
+const grid = Array(cellsVertical)
 .fill(null)
-.map(() => Array(cells).fill(false));
+.map(() => Array(cellsHorizontal).fill(false));
 
 const verticals = Array(cells)
 .fill(null)
