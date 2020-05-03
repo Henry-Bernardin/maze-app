@@ -62,7 +62,7 @@ const horizontals = Array(cellsVertical - 1)
 .fill(null)
 .map(() => Array(cellsHorizontal).fill(false));
 
-const startRow = Math.floor(Math.random() * cells); 
+const startRow = Math.floor(Math.random() * cellsVertical); 
 const startColumn = Math.floor(Math.random() * cells); 
 
 const stepThroughCell = (row, column) => {
