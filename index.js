@@ -54,9 +54,9 @@ const grid = Array(cellsVertical)
 .fill(null)
 .map(() => Array(cellsHorizontal).fill(false));
 
-const verticals = Array(cells)
+const verticals = Array(cellsVertical)
 .fill(null)
-.map(() => Array(cells - 1).fill(false));
+.map(() => Array(cellsHorizontal - 1).fill(false));
 
 const horizontals = Array(cells - 1)
 .fill(null)
