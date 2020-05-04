@@ -10,6 +10,7 @@
 
 - Ranndom generated maze.
 - "You Win!" Message once ball reach the goal. 
+- Maze collapses once complete
 
 ## Tech Used / Dependencies
 
