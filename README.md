@@ -1,4 +1,4 @@
-# maze-app
+# Maze-App
 
 ## Overview 
 
