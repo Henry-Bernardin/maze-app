@@ -6,6 +6,11 @@
 
 ### LIVE LINK: https://upbeat-dubinsky-852b24.netlify.app/
 
+## How To Play
+
+- Directional keys are: W(Up), D(Right), S(Down), A(Left)
+- Guide circle to green square to complete maze
+
 ## Features 
 
 - Ranndom generated maze.
