@@ -183,6 +183,7 @@ const ball = Bodies.circle(
     ballRadius, 
     {
         label: 'ball',
+        friction:0,
         render:{
             fillStyle:'blue'
         }
