@@ -201,7 +201,7 @@ if (event.keyCode === 87){
 }
     // D - Move ball right
 if (event.keyCode === 68){
-    Body.setVelocity(ball, {x: x + 5, y}); 
+    Body.setVelocity(ball, {x: x + 3, y}); 
 }
     // S - Move ball down
 if (event.keyCode === 83){
