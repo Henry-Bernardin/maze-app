@@ -197,7 +197,7 @@ document.addEventListener('keydown', event => {
 
     // W - Move ball up
 if (event.keyCode === 87){
-    Body.setVelocity(ball, {x, y: y - 5}); 
+    Body.setVelocity(ball, {x, y: y - 3}); 
 }
     // D - Move ball right
 if (event.keyCode === 68){
