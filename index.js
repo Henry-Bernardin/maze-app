@@ -147,7 +147,8 @@ verticals.forEach((row, rowIndex) => {
             rowIndex * unitLengthY + unitLengthY / 2, 
             5, 
             unitLengthY, 
-            {   label: 'wall', 
+            {   label: 'wall',
+                friction: 0, 
                 isStatic:true,
                 render:{
                     fillStyle:'red'
