@@ -136,7 +136,6 @@ horizontals.forEach((row, rowIndex) => {
     });
 });
 
-
 verticals.forEach((row, rowIndex) => {
   row.forEach((open, columnIndex) => {
         if (open){
