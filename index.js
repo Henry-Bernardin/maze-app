@@ -212,7 +212,6 @@ if (event.keyCode === 65){
 }
 
 }); 
-
 // Win Condition 
 Events.on(engine, 'collisionStart', event => {
     event.pairs.forEach((collision) => {
