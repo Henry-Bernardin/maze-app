@@ -190,7 +190,6 @@ const ball = Bodies.circle(
 );
 World.add(world, ball); 
 
-
 document.addEventListener('keydown', event => {
     const {x,y} = ball.velocity; 
 
