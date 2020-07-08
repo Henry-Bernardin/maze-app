@@ -81,7 +81,7 @@ const stepThroughCell = (row, column) => {
             [row, column - 1, 'left'] 
         ]); 
 
-    // For each neighbor...
+    //For each neighbor...
     for (let neighbor of neighbors){
         const [nextRow, nextColumn, direction] = neighbor;
 
