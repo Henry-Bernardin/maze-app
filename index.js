@@ -90,7 +90,7 @@ const stepThroughCell = (row, column) => {
         continue; //This will skip over and look for the next neighbor pair
     }
 
-    // If we have visited that neighbor continue to next neighbor
+    //If we have visited that neighbor continue to next neighbor
     if (grid[nextRow][nextColumn]){
         continue; 
     }
