@@ -33,7 +33,7 @@ const walls = [
 ];
 World.add(world, walls);
 
-// Maze Generation
+//Maze Generation
 const shuffle = (arr) => {
     let counter = arr.length; 
 
